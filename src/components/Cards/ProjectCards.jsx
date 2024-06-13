@@ -57,9 +57,9 @@ const Tags = styled.div`
 
 const Tag = styled.span`
     font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
+    font-weight: 700;
+    color: ${({ theme }) => theme.black };
+    background-color: #CCACCB;
     padding: 2px 8px;
     border-radius: 10px;
 `
@@ -70,6 +70,7 @@ const Details = styled.div`
     flex-direction: column;
     gap: 0px;
     padding: 0px 2px;
+
 `
 const Title = styled.div`
     font-size: 20px;

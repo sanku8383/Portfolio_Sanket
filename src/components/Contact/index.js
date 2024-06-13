@@ -36,7 +36,7 @@ font-size: 42px;
 text-align: center;
 font-weight: 600;
 margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.white};
   @media (max-width: 768px) {
       margin-top: 12px;
       font-size: 32px;
@@ -47,7 +47,7 @@ const Desc = styled.div`
     font-size: 18px;
     text-align: center;
     max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
+    color: ${({ theme }) => theme.white};
     @media (max-width: 768px) {
         margin-top: 12px;
         font-size: 16px;
@@ -72,7 +72,7 @@ const ContactTitle = styled.div`
   font-size: 24px;
   margin-bottom: 6px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.black};
 `
 
 const ContactInput = styled.input`
@@ -81,7 +81,7 @@ const ContactInput = styled.input`
   border: 1px solid ${({ theme }) => theme.text_secondary};
   outline: none;
   font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.black};
   border-radius: 12px;
   padding: 12px 16px;
   &:focus {

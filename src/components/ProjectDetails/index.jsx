@@ -76,7 +76,7 @@ const Image = styled.img`
 const Label = styled.div`
     font-size: 20px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary};
+    color: ${({ theme }) => theme.black};
     margin: 8px 6px;
     @media only screen and (max-width: 600px) {
         font-size: 16px;
@@ -91,16 +91,17 @@ const Tags = styled.div`
     @media only screen and (max-width: 600px) {
         margin: 4px 0px;
     }
+    
 `;
 
 const Tag = styled.div`
     font-size: 14px;
     font-weight: 400;
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
     margin: 4px;
     padding: 4px 8px;
     border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary + 20};
+    background-color: ${({ theme }) => theme.black};
     @media only screen and (max-width: 600px) {
         font-size: 12px;
     }
@@ -227,7 +228,6 @@ const index = ({ openModal, setOpenModal }) => {
                     )}
                     <ButtonGroup>
                         <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>
